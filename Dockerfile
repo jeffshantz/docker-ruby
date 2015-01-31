@@ -13,3 +13,6 @@ RUN apt-get update -qq && \
     make install && \
     gem install bundler && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+ENV GEM_HOME /usr/local/lib/ruby/gems/2.2.0
+ENV GEM_PATH /usr/local/lib/ruby/gems/2.2.0
